@@ -6,14 +6,15 @@ title: Economies of scale and self-interested cooperation
 Fascinating conclusion quietly tucked away in the last slide of a [2011 Netflix
 cloud talk](http://www.slideshare.net/adrianco/netflix-velocity-conference-2011/64):
 
-> ### Cloud Standardization?
+> Cloud Standardization?
+>
 >   * Cloud features and APIs should be a commodity not a differentiator
 >   * Differentiate on scale and quality of service
 >   * Competition also drives cost down
 
-That competition and standardization is desirable and beneficial at the
-_individual level_, is a powerful insight—perhaps also employed by Google with
-its Chrome and Android strategy.
+A powerful insight: competition and standardization are desirable and beneficial
+at the _individual level—an insight perhaps also employed by Google with its
+Chrome and Android strategy.
 
 [ESR made the case](http://esr.ibiblio.org/?p=928) that there exists an
 economic motivation for sharing code. This was validated by the case of
@@ -26,8 +27,10 @@ economic motivation for sharing code. This was validated by the case of
 > changes when a new version of gcc came out, rather than a few weeks of
 > changes if the OpenNT-related contributions were accepted.
 
-Open has utility for both parties. If there weren't utility, then allocation
+Open source has utility for both parties. If there weren't utility, then allocation
 (priorities) would suffer heavily (cf. GNU Hurd).
+
+Also from the Netflix slides:
 
 > _We would prefer to be an insignificant customer in a giant cloud._
 
