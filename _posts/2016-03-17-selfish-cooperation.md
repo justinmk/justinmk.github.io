@@ -30,6 +30,8 @@ economic motivation for sharing code. This was validated by the case of
 Open source has utility for both parties. If there weren't utility, then allocation
 (priorities) would suffer heavily (cf. GNU Hurd).
 
+# Metafile: build_meta.json
+
 Also from the Netflix slides:
 
 > _We would prefer to be an insignificant customer in a giant cloud._
