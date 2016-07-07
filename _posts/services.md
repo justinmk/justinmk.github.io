@@ -1,0 +1,53 @@
+---
+layout: post
+title: Services
+---
+
+[dependencies ][yosefkdep]
+
+Microservices: anchoring to reality
+
+TODO: http://www.infoq.com/protocol/
+
+it seems to me the microservices hype is rediscovering the idea of protocols
+i.e., common rules for interaction,  which makes details about the implementations unimportant
+
+http://c2.com/cgi/wiki?ApiVsProtocol
+
+> protocols [...] provide the most flexibility. Program layers can evolve
+> independently of each other. APIs, like CORBA, usually infect the top most
+> layer down to the bottom most layer which create serious dependencies between
+> layers
+
+http://www.infoq.com/news/2014/07/protocol-design-sbe-thompson
+
+> A protocol is an agreed set of interactions [...] governed by rules.
+> [...] The protocol for interacting to a file is an open action, followed by
+> zero or more read/write actions, then followed by a close action.
+> [...] We use protocols all the time in our everyday lives. Without protocols
+> we would descend into chaos. Without protocols we would not be able to
+> collectively achieve great things. 
+
+> an API can be improved when people pause and map out the possible interaction
+> patterns and then document these into a protocol. Calling a method on an
+> object is just passing it a message, albeit in a very coupled way given most
+> programming languages. As we take a more decoupled approach the messages
+> become first class concepts that really benefit from being organised into
+> a protocol. Documenting our protocols help refine them and make a system
+> easier to understand.
+
+[Microservice Versioning][versioning]
+=====================================
+
+* `Interface.Feature.Bugfix`
+* v1.2.3 to v1.2.4: canary test then remove old version
+* v1.2.x to v1.3.x:
+  * canary test then remove or keep both
+  * route v1.3.x clients to new version to get new feature
+  * remove v1.2.x only after v1.3.x is found to work for v1.2.x clients
+* v1.x.x to v2.x.x:
+  * route clients to specific versions
+  * remove old server version when all old clients are gone
+
+[yosefkdep]: http://yosefk.com/blog/redundancy-vs-dependencies-which-is-worse.html
+[versioning]: http://www.slideshare.net/adriancockcroft/microservices-workshop-craft-conference/156
