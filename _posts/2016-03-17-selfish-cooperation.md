@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-07-06
+date: 2016-03-17
 published: true
 author: Justin M. Keyes
 title: Economies of scale and self-interested cooperation

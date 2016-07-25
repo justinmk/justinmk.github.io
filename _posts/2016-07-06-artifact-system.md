@@ -1,7 +1,9 @@
 ---
 layout: post
 date: 2016-07-06
+last_modified_at: 2016-07-25
 published: true
+author: Justin M. Keyes
 title: Artifact System
 ---
 
