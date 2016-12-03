@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2016-07-06
-last_modified_at: 2016-07-25
+last_modified_at: 2016-12-03
 published: true
 author: Justin M. Keyes
 title: Artifact System
@@ -282,6 +282,11 @@ An artifact system, like a [package system][Package], is _not_ purely
 a technical problem: much of it is based on a common understanding which may
 change in your organization over time. By embracing that informality, we can
 build a useful system with minimal effort.
+
+Another option is to describe dependencies meaningfully, instead of the ad-hoc
+approach of Maven, Artifactory, and other common tools. Rich Hickey expounds on
+the flaws of current approaches for handling the underspecified nature of
+dependencies and versions in his ["Spec-ulation" talk](https://youtu.be/oyLBGkS5ICk).
 
 [Package]: https://medium.com/@sdboyer/4ae9c17d9527
 [Adrian Cockcroft]: http://www.slideshare.net/adriancockcroft/microservices-workshop-craft-conference/22
