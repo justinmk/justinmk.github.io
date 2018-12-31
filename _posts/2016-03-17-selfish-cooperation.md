@@ -6,7 +6,7 @@ author: Justin M. Keyes
 title: Economies of scale and self-interested cooperation
 ---
 
-A fascinating conclusion is quietly tucked away in the last slide of a [2011
+Quietly tucked away in the last slide of a [2011
 Netflix cloud talk](http://www.slideshare.net/adrianco/netflix-velocity-conference-2011/64)
 (Mr. Cockcroft [talks a lot](http://www.slideshare.net/adrianco/presentations)):
 
