@@ -1,29 +1,39 @@
 ---
 layout: post
 date: 2016-07-06
-last_modified_at: 2016-12-03
+last_modified_at: 2019-10-29
 published: true
 author: Justin M. Keyes
 title: Artifact System
 ---
 
-**Problem:** Many tools, systems, and users need things produced by builds.
+Software projects produce _artifacts_—a concept less particular than _package_
+which has a version, manifest and structure conforming to some _package
+system_. [Package systems are smart, and thus complex][Package]. The key
+feature of an artifact is that it is dumb.
 
-  - **Rockstar solution:** Develop a web service with an API. Fix bugs. Add
-    features. Repeat.
-  - **Simple solution:** Put the things into a flat list of locations which map
-    one-to-one with DVCS revisions.
-      - Requires a (trivial) protocol to be followed.
-      - Requires a script to be run at the end of every build.
-      - No new API, service, or software (except the script) is needed.
+Package management is a hard problem, with lots of half-broken systems serving
+particular ecosystems: Cargo for Rust, pip for Python, NPM for node.js, Maven
+for Java. Artifact systems are not so well-studied, though the concept is
+high-leverage: unlike package systems, an artifact system can:
 
-When a project builds, it produces artifacts—a concept less particular than
-"package" which has a version, manifest and structure conforming to some
-_package system_. A package is an artifact, but many artifacts are not packages.
-The key feature of an artifact is that it is dumb. [Package systems are
-"smart"][Package] and **complex**. There are _many_ solutions for package
-management, and it is a hard problem; let others fight it. There are not many
-solutions for storing and sharing artifacts.
+1. store arbitrary artifacts, like a filesystem (Python `pip` serves only Python packages)
+2. serve arbitrary consumers (Python `pip` requires Python on the client)
+3. provide a trivial interface, so any client can push or pull artifacts in a predictable manner
+4. sidestep ambiguous version-resolution problems, by mapping artifacts to DVCS hashes
+
+To design a system there are two options:
+
+- _Rockstar solution:_
+  - Develop a web service with an API, fix bugs, add features, update clients, deprecate features.
+  - Repeat.
+- _Simple solution:_
+  - Put artifacts in a flat list of locations which map to DVCS revisions.
+  - Follow a trivial protocol.
+  - Run a script at the end of every build.
+  - No new API, service, or software is needed.
+
+This essay describes the simple solution.
 
 Simple design
 -------------
@@ -57,18 +67,10 @@ Robust simple systems can be used as substrate for more complex systems:
   with no query support
 * RISC, NAND, ... nMOS ;)
 
-For delivering artifacts, there are existing solutions: [Artifactory] is [used by
-Netflix]; most CI products (TeamCity, Jenkins, etc.) have an artifact publishing
-feature. Artifactory is a good solution, but it needn't to be the _immediate_
-solution: a key advantage of a simple system is that it can be migrated to
-a fancy system _at any time in the future, for about the same effort_.
-Artifactory is an extra API/ACL/SLA to manage.
-
-An alternative is to leverage the infrastructure that you _already use_. If you
-depend on an infrastructure service like AWS, it is the lingua franca of your
+If you use an infrastructure service like AWS, it is the lingua franca of your
 organization: your tools, services, and developers all speak it. [boto] and S3
-are the least-common-denominator of capabilities. A blob on S3 can be downloaded
-via web browser, `curl`, or a REST client.
+are the least-common-denominator of capabilities. A blob on S3 can be fetched
+by web browser, `curl`, or a REST client.
 
 We can use AWS S3 to build a serverless, API-less, decentralized artifact source.
 
@@ -80,7 +82,7 @@ The system has four concepts:
 1. **Artifact:** A thing produced by a build
 2. [**Address:**](#address) Global location of the artifact for a given build;
    each address has a **parent** (and ancestors)
-3. [**Metafile:**](#metafile-buildmetajson) JSON map of artifact names and
+3. [**Metafile:**](#metafile-build_metajson) JSON map of artifact names and
    their addresses
 4. [**Metalogic:**](#metalogic) Script (`build_meta.py`) that builds the
    metafile
@@ -119,9 +121,9 @@ metafile (which contains a map of artifacts to addresses).
 Address
 -------
 
-Artifacts for a given VCS revision (git hash)--for any project--are stored at an
-_artifact address_, which is basically a "snapshot" of artifacts corresponding
-to a VCS revision. An artifact address has the form:
+Artifacts for a given DVCS revision (git hash)--for any project--are stored at an
+_artifact address_, which is just a snapshot of artifacts corresponding to
+a DVCS revision. An artifact address has the form:
 
     s3://dev/builds/<hash>
 
@@ -134,8 +136,8 @@ inspection.
 Metafile: build\_meta.json
 --------------------------
 
-We described an _artifact address_ as a snapshot of the project output for
-a given VCS revision. From that snapshot we should be able to deploy or install
+We defined _artifact address_ as a snapshot of the project output for a given
+DVCS revision. From that snapshot we should be able to deploy or install
 the product. But each snapshot may be "sparse": it contains only artifacts that
 actually changed, and the missing artifacts are resolved by looking at the
 ancestor addresses. If a build wasn't triggered to produce an artifact, we
@@ -144,9 +146,8 @@ artifacts are resolved by following the parent address until all artifacts are
 found (see [Metalogic](#metalogic)).
 
 The flattened result of the resolved artifacts is stored in the _metafile_
-`build_meta.json`. (It's just a JSON file, called "the metafile" for brevity.)
-
-Here is the **metafile structure:**
+`build_meta.json`. (It's just JSON, called "the metafile" for brevity.) Here is
+the **metafile structure:**
 
 ```
 {
@@ -204,15 +205,15 @@ The metalogic algorithm follows:
   with the current metafile.
   * Repeat until the metafile is fully resolved, or MAX is reached.
 
-A key feature of the metalogic is that it must be safe to run at any time.
-Various hooks may run it at any time, without fear of causing some undesired
-state. The VCS runs the metalogic immediately at every commit, in order to
-"stub" the metafile immediately so that any dependent system may assume that the
-metafile for any valid VCS revision _always_ exists (even though its resolved
-artifacts will be that of its nearest ancestor). _Every_ build runs the
-metalogic after the build finishes, _regardless_ of whether the build currently
-produces artifacts or not (because projects change often, and they may start
-producing artifacts at any time).
+A key feature of the metalogic is that it must be safe to run at any time
+(idempotent). Various hooks may run it at any time, without fear of causing
+some undesired state. The VCS runs the metalogic immediately at every commit,
+in order to "stub" the metafile immediately so that any dependent system may
+assume that the metafile for any valid VCS revision _always_ exists (even
+though its resolved artifacts will be that of its nearest ancestor). _Every_
+build runs the metalogic after the build finishes, _regardless_ of whether the
+build currently produces artifacts or not (because projects change often, and
+they may start producing artifacts at any time).
 
 Only _known_ artifacts are allowed. To emphasize predictability and reduce
 ambiguity, the metalogic raises an error (fails the build) if it sees an unknown
@@ -255,13 +256,13 @@ Process exited with code 0
 Protocol
 --------
 
-All builds are expected to follow a simple protocol:
+All builds must follow a simple protocol:
 
 * Each artifact name must be unique across all projects. Define the artifact
   names in a single source (hard-coded in `build_meta.py`, if you like).
 * Each project's _buildscript_ defines and produces its artifacts. The internal
   logic of the script is irrelevant; the end result must be that the artifacts
-  are sent to the [artifact address](#artifact-address) having names conforming
+  are sent to the [artifact address](#address) having names conforming
   to the set of valid artifact names.
 * All branches (even feature branches, codereviews, pull-requests, etc.) should
   build and upload their artifacts. (So any deploy or test system can expect the
@@ -272,21 +273,22 @@ All builds are expected to follow a simple protocol:
 Conclusion
 ----------
 
-We have a single source of artifacts that can be used by test systems, developer
-workstations, and production deployments. Compare the previous approach where QA
-automation, QA manual test, cloud production, on-premise patching, continuous
-integration, etc., _each_ built their own artifacts using custom scripts and
-unshared configuration.
+The artifact system is a single, predictable "source of truth" consumable by
+test systems, developer workstations, and deployments. Compare the accidental
+approach: where QA automation, QA manual test, cloud production, on-premise
+patching, continuous integration, and developers _each_ build their own
+artifacts using custom scripts and unshared configuration.
 
-An artifact system, like a [package system][Package], is _not_ purely
-a technical problem: much of it is based on a common understanding which may
-change in your organization over time. By embracing that informality, we can
-build a useful system with minimal effort.
+An artifact system, like a [package system][Package], is not purely a technical
+problem: it derives in part from a common understanding which may change in
+your organization over time. By embracing that informality, we can build
+a useful system with minimal effort.
 
-Another option is to describe dependencies meaningfully, instead of the ad-hoc
-approach of Maven, Artifactory, and other common tools. Rich Hickey expounds on
-the flaws of current approaches for handling the underspecified nature of
-dependencies and versions in his ["Spec-ulation" talk](https://youtu.be/oyLBGkS5ICk).
+The future of package management and artifact resolution demands a more
+sophisticated approach that eliminates the need for ecosystem-biased solutions:
+describe dependencies _meaningfully_, instead of the underspecified heuristics
+of traditional systems. Rich Hickey presents a way forward in
+["Speculation"](https://youtu.be/oyLBGkS5ICk).
 
 [Package]: https://medium.com/@sdboyer/4ae9c17d9527
 [Adrian Cockcroft]: http://www.slideshare.net/adriancockcroft/microservices-workshop-craft-conference/22
