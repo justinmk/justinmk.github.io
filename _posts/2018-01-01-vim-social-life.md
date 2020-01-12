@@ -11,15 +11,14 @@ Vim is a shell command, and its fast startup supports that use-case: shell
 tasks, whether ad-hoc (interactive) or orchestrated (pipeline, script), are
 cheap and thus frequent.
 
-Yet Vim's startup story is relatively unpolished. Shell tools are expected to
+Yet Vim's startup story is relatively unpolished. We expect shell tools to
 consume standard input ("stdin") and emit to standard output ("stdout")—but
 Vim supports this awkwardly, at best. The endeavor is never mentioned in Vim
 tutorials, including the "Unix as IDE" [hymnals](https://news.ycombinator.com/item?id=12653028).
 And it is puzzled out of Vim's documentation only by careful inspection.
 
-Vim is positioned as a script host (VimL, `if_python`, …) , but not as
-a participant. Yet Vim is a terminal tool, and terminal users expect their
-tools to compose. Like this:
+Vim is positioned as a script host (Vimscript, `if_python`, …) , but not as
+a participant. Shell users expect their tools to compose, like this:
 
     # Does not work!
     $ printf 'a\nb\nc\nb\n' | vim +'g/b/norm gUUixx' +2 +'norm yy2p' | tr x z
@@ -108,16 +107,16 @@ about Vim before seating it next to Grandpa vi.
 
 Input at startup can take these forms:
 
-- user ("keyboard") input
+- user input ("keyboard")
 - Ex commands
 - text
 
-By default, even in non-interactive mode (`-es`) Vim treats input as
-"commands". That's a tradition from Grandpa vi. Note that "commands" in vi
-parlance means general _user-input_ (starting from Normal-mode).
+By default even in non-interactive mode (`-es`) Vim treats input as "commands",
+a tradition from Grandpa vi. Note that "commands" in vi parlance means general
+_user input_ (starting from Normal-mode).
 
 With `-e` (and `-es`) Vim treats input as Ex commands: those entered at the `:`
-prompt, or "statements" in Vim script.
+prompt, or "statements" in Vimscript.
 
     $ printf "put ='foo'\n%%s/o/X\n%%print\n" | vim -es
 
@@ -126,8 +125,8 @@ prompt, or "statements" in Vim script.
 Finally the `-` file tells Vim to slurp input as plain text into a buffer. Then
 commands can be given with `-c` or `--cmd`.
 
-There's another thing I want to announce at the dinner table: if you specify
-the `-` file, then other _file arguments_ are not allowed. `:help vim-arguments`
+There's something I want to announce at the dinner table: if you specify the
+`-` file, then other _file arguments_ are not allowed. `:help vim-arguments`
 characterizes these independent "editing ways":
 
 > Exactly one out of the following five items may be used to choose how to start editing:
@@ -188,7 +187,7 @@ The distinction is not useful, and in Nvim they both invoke `getexline`.
 
 ## Under the tree: Neovim
 
-[Neovim](https://neovim.io/) version 0.3.1 features some
+[Nvim](https://neovim.io/) version 0.3.1 features some
 [improvements](https://github.com/neovim/neovim/pull/7679) to the workflow
 described above. The [documentation](https://neovim.io/doc/user/starting.html#-es)
 and manpage were rewritten.
@@ -223,12 +222,12 @@ depending on the Nvim version:
 
 ## Eggnog
 
-The mechanisms and ergonomics for delivering data to Vim at invocation-time are
-essentially unchanged from vi—owing, yes, to deference to POSIX and our old
-friend backwards compatibility—but perhaps primarly to inertia.
+The ergonomics for delivering data to Vim at invocation-time are essentially
+unchanged from vi—owing, yes, to POSIX deference and our old friend backwards
+compatibility—but perhaps primarily to inertia.
 
-It turns out that very few people actually care about the traditional behavior:
-the precise behavior of `-es`, for example, was broken in Nvim for years but no
+It seems that few people actually care about the traditional behavior:
+the precise behavior of `-es` for example was broken in Nvim for years but no
 one complained. And Vim's own codebase (including testsuite) does not use `-E`.
 If no one uses a feature, it might be ok to change it.
 
