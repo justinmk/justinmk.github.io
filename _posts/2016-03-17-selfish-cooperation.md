@@ -43,4 +43,6 @@ model: large AWS customers are able to negotiate discounts on [the most
 expensive component of AWS](https://news.ycombinator.com/item?id=11301085):
 traffic; smaller customers are paying [hidden costs](https://news.ycombinator.com/item?id=11301229).
 
+---
 
+_Update (2021):_ [Google's Android shifts to "upstream first" Linux kernel approach](https://www.phoronix.com/scan.php?page=news_item&px=Android-Linux-Upstream-First) ([slides](https://linuxplumbersconf.org/event/11/contributions/1046/attachments/824/1557/2021%20LPC%20GKI.pdf))
