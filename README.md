@@ -1,5 +1,13 @@
 https://github.com/github/pages-gem
 
-    sudo gem update --system=3.0.3
-    rm Gemfile.lock
+## Run
+
+    bundle config set --local path .bundle
     bundle install
+    bundle exec jekyll serve --watch --livereload
+
+## Update deps
+
+    bundle config set --local path .bundle
+    rm Gemfile.lock
+    bundle update github-pages
