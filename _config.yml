@@ -2,8 +2,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 title: sink
-description: > # This means to ignore newlines until next field.
-  Old hopes retirement home
+description: >
+  Old copes retirement home
 #baseurl: "jmk" # the subpath of your site, e.g. /blog
 url: "http://justinmk.github.io" # base hostname & protocol for your site
 twitter_username: justinmk
