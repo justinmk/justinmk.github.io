@@ -10,4 +10,5 @@ https://github.com/github/pages-gem
 
     bundle config set --local path .bundle
     rm Gemfile.lock
+    bundle update webrick
     bundle update github-pages
