@@ -30,4 +30,4 @@ I ran out of time :)
 ![vimconf-keynote](/img/vimconf-justinmk-2.jpg)
 
 Some people were very enthusiastic about the talk.  A few people mentioned that
-I need to work on my delivery.  Yeah, I already knew that :)
+I need to work on my delivery.
