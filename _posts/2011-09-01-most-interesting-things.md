@@ -1,0 +1,88 @@
+---
+layout: post
+date: 2011-09-01
+last_modified_at: 2023-11-21
+published: true
+title: 'The Most Interesting Things'
+---
+
+In the spirit of <a href="http://en.wikipedia.org/wiki/Hilbert's_problems">Hilbert's problems</a>, here are the most interesting things I currently know of:
+
+- Emergence
+    - fundamental (non-contact) forces &amp; particles (muons, quarks, ...) ⇨ fluid dynamics, etc.
+    - <a href="http://highered.blogspot.com/2010/11/collatz-ecologies.html">Collatz Ecologies</a>
+        - "how structure emerges out of iteration"
+        - "when stable patterns emerge in some iterated system, it's possible to build new systems on top of the old ones"
+- <a href="http://en.wikipedia.org/wiki/Chaos_theory#Distinguishing_random_from_chaotic_data">Chaos theory</a>
+    - Small differences in initial conditions yield widely diverging outcomes, rendering long-term prediction impossible in general, _even though these systems are deterministic_.
+        - In practice no time series consists of pure 'signal.' There will always be some form of corrupting noise.
+        - A deterministic system will have an error that either remains small (stable, regular solution) or increases exponentially with time (chaos). A stochastic system will have a randomly distributed error.
+        - Manifests as [avalanche](https://en.wikipedia.org/wiki/Avalanche_effect) in [hash functions](https://en.wikipedia.org/wiki/Chaos_theory#Cryptography).
+- Entropy
+- Simulated evolution?
+    - <a href="http://www.math.upenn.edu/~wilf/DownldGF.html">generatingfunctionology</a>
+- Self-replicating machines (logical or physical)
+    - Cellular automata
+    - <a href="http://www.reprap.org/">RepRap</a>, <a href="http://www.makerbot.com/">MakerBot</a>
+- Patterns
+    - Pattern recognition
+    - fractals
+    - TV Tropes
+- Materials:
+    - Graphene / CNT
+        - <a href="http://www.reddit.com/r/askscience/comments/qilid/is_building_a_space_elevator_even_feasible/c3xx7ar">limitations</a>
+    - <a href="./talk-silicon-carbide">SiC</a>
+    - <a href="http://highscalability.com/blog/2010/5/5/how-will-memristors-change-everything.html">Memristor</a>
+    - Protein design
+- Trust networks 
+    - Importance of relationships
+        - e.g.: Starbucks needed Kraft to distribute coffee to groceries early on; later, Starbucks built retailer relationships for VIA product launch; after building those relationships, <a href="http://www.nytimes.com/2010/12/07/business/07coffee.html">Starbucks no longer needed Kraft</a>. Q: Why were relationships needed? A: The vendors needed trust.
+    - [Ken Thompson, "Reflections on Trusting Trust"](https://dl.acm.org/doi/pdf/10.1145/358198.358210)
+- Power structures
+    - Organized crime
+    - The State
+    - Prisoner's dilemma
+- Systems
+- Connections
+    - netlists (vlsi)
+    - bathroom sinks
+    - networks
+    - ip packet negotiation
+    - airport connections (eg ATL)
+    - distribution hubs (eg Trader Joe's)
+    - plumbing
+    - joints
+    - sockets
+    - organization communication: information filters, delegation, email chains.
+- Analog computing / fuzzy logic
+    - <a href="http://www.edge.org/q2011/q11_1.html">analog computing</a>: "Instead of meaningful information being encoded as unambiguous (and fault-intolerant) digital sequences referenced by precise numerical addressing, meaningful information is increasingly being encoded (and operated upon) as continuous (and noise-tolerant) variables such as frequencies (of connection or occurrence) and the topology of what connects where..."
+- Private currencies
+- Decentralized/distributed order
+    - currency (e.g., bitcoin)
+    - dns (e.g., namecoin)
+    - software development
+    - crowdsourcing
+        - prediction markets
+    - open source development
+    - web: <a href="http://www.unhosted.org/">Unhosted</a>
+    - Ubiquitous sovereignties
+        - <a href="http://www.reddit.com/r/reddit.com/comments/eekg4/look_at_whos_complaining_the_most_about_wikileaks/c17l0pu">Nietzsche talked about how society would eventually work its way into anarchism.</a>
+            - before Vatican II, masses in Latin. Vatican II: bible readable by layman: increase in the number of atheists worldwide.
+            - "Government I" holds Vatican I policies: important aspects of government are to be handled by the government elites, and the lay-person should be ignorant and uninvolved in the inner-workings of governmental procedure.
+            - "Government II": erosion of goverment elites: increase in the number of anarchists
+        - _(update 2023)_ Del Complex [BlueSea Frontier Compute Cluster (BSFCC)](https://www.delcomplex.com/blue-sea-frontier)
+            - floating barge of 10k+ Nvidia H100 GPUs in international waters.
+            - "Each BSFCC is a sovereign nation state for innovation and acceleration."
+            - "Kinetic risk mitigation with dedicated security forces."
+- Ubiquitous encryption
+    - <a href="http://en.wikipedia.org/wiki/Deniable_encryption">Deniable encryption</a>
+- Information theory
+    - Compression
+    - Encryption
+    - Information Entropy
+    - The <a href="http://nuclear.ucdavis.edu/~tgutierr/files/stmL1.html">Lagrangian</a>: "If you know The Lagrangian, in principle you know everything there is to know about a system. ... It is essentially an ultra-compressed way to write A LOT of information."
+- Game theory
+- <a href="http://folding.stanford.edu/">Folding@Home</a>
+- Practical
+    - Lock-picking
+    - Knot-tying
