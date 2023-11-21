@@ -12,7 +12,7 @@ In the spirit of <a href="http://en.wikipedia.org/wiki/Hilbert's_problems">Hilbe
     - fundamental (non-contact) forces &amp; particles (muons, quarks, ...) ⇨ fluid dynamics, etc.
     - <a href="http://highered.blogspot.com/2010/11/collatz-ecologies.html">Collatz Ecologies</a>
         - "how structure emerges out of iteration"
-        - "when stable patterns emerge in some iterated system, it's possible to build new systems on top of the old ones"
+        - "When stable patterns emerge in some iterated system, it's possible to build new systems on top of the old ones. Moreover, these new systems can be seen as independent of the old ones."
 - <a href="http://en.wikipedia.org/wiki/Chaos_theory#Distinguishing_random_from_chaotic_data">Chaos theory</a>
     - Small differences in initial conditions yield widely diverging outcomes, rendering long-term prediction impossible in general, _even though these systems are deterministic_.
         - In practice no time series consists of pure 'signal.' There will always be some form of corrupting noise.
