@@ -28,3 +28,7 @@ The broken path is probably coming from the lockfile, so remove it.
     rm Gemfile.lock
     bundle update webrick
     bundle update github-pages
+
+## Fucking broken
+
+Doesn't work with ruby 3.3: https://github.com/github/pages-gem/issues/899
