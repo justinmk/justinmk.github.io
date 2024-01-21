@@ -13,6 +13,8 @@ In the spirit of <a href="http://en.wikipedia.org/wiki/Hilbert's_problems">Hilbe
     - <a href="http://highered.blogspot.com/2010/11/collatz-ecologies.html">Collatz Ecologies</a>
         - "how structure emerges out of iteration"
         - "When stable patterns emerge in some iterated system, it's possible to build new systems on top of the old ones. Moreover, these new systems can be seen as independent of the old ones."
+        - [Collatz conjecture](https://www.quantamagazine.org/computer-scientists-attempt-to-corner-the-collatz-conjecture-20200826/):
+          > Pick any (nonzero, whole) number. If it’s odd, multiply it by 3 and add 1; if it’s even, divide by 2. Now you have a new number. Apply the same rules, get a new number and keep going. The conjecture predicts that no matter what number you started with, eventually you’ll end up at 1, at which point you’re stuck in a little loop: 1, 4, 2, 1.
 - <a href="http://en.wikipedia.org/wiki/Chaos_theory#Distinguishing_random_from_chaotic_data">Chaos theory</a>
     - Small differences in initial conditions yield widely diverging outcomes, rendering long-term prediction impossible in general, _even though these systems are deterministic_.
         - In practice no time series consists of pure 'signal.' There will always be some form of corrupting noise.
