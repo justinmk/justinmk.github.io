@@ -1,6 +1,5 @@
 ---
-layout: post
-date: 2013-06-08
+date: "2013-06-08T00:00:00Z"
 published: true
 title: Low-level programming discourages automatic optimization
 ---

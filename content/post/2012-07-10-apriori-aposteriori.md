@@ -1,6 +1,5 @@
 ---
-layout: post
-date: 2012-07-10
+date: "2012-07-10T00:00:00Z"
 published: true
 title: You say priori, I say posteriori
 ---

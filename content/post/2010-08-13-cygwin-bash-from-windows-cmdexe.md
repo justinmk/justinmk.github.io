@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2010-08-13
+date: "2010-08-13T00:00:00Z"
 published: true
-title: 'How to call a Cygwin bash command from Windows CMD'
+title: How to call a Cygwin bash command from Windows CMD
 ---
 
 Using Cygwin on Windows, sometimes you need to run a bash command or script from the Windows command line (CMD, DOS, shell). This is particularly useful if you want <b>to use the Task Scheduler</b> instead of <a href="http://www.devdaily.com/blog/post/linux-unix/get-crontab-started-running-when-using-cygwin">messing with cron on cygwin</a>. If you're going to schedule tasks on a Windows system, then the Windows&nbsp;Task Scheduler is probably the sane way to do it.

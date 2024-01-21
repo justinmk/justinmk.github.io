@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2011-09-28
+date: "2011-09-28T00:00:00Z"
 published: true
-title: 'Singularity'
+title: Singularity
 ---
 
 human singularity: compulsive excellence (Fountainhead)

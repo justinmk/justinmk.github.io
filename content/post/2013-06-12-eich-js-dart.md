@@ -1,6 +1,5 @@
 ---
-layout: post
-date: 2013-06-12
+date: "2013-06-12T00:00:00Z"
 published: true
 title: Brendan Eich comments on Dart, JavaScript
 ---

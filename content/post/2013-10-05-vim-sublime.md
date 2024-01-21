@@ -1,6 +1,5 @@
 ---
-layout: post
-date: 2013-10-05
+date: "2013-10-05T00:00:00Z"
 published: true
 title: How to make Vim like Sublime Text
 ---

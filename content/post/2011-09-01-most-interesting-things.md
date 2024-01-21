@@ -1,9 +1,8 @@
 ---
-layout: post
-date: 2011-09-01
-last_modified_at: 2023-11-21
+date: "2011-09-01T00:00:00Z"
+last_modified_at: "2023-11-21"
 published: true
-title: 'The Most Interesting Things'
+title: The Most Interesting Things
 ---
 
 In the spirit of <a href="http://en.wikipedia.org/wiki/Hilbert's_problems">Hilbert's problems</a>, here are the most interesting things I currently know of:

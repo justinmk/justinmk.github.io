@@ -1,10 +1,9 @@
 ---
-title: "VimConf 2019"
-layout: post
-date: 2019-11-05
-description: "Keynote presentation on Neovim and the state of text editing technology"
-published: true
 author: Justin M. Keyes
+date: "2019-11-05T00:00:00Z"
+description: Keynote presentation on Neovim and the state of text editing technology
+published: true
+title: VimConf 2019
 ---
 
 I [presented a keynote](https://youtu.be/Bt-vmPC_-Ho?t=23) at

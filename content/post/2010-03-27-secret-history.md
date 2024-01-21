@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2010-03-27
+date: "2010-03-27T00:00:00Z"
 published: true
-title: 'The Secret History'
+title: The Secret History
 ---
 
 Tartt, Donna. <i>The Secret History.</i> New  York: Knopf Books for Young Readers, 2004.

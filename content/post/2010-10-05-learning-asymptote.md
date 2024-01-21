@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2010-10-05
+date: "2010-10-05T00:00:00Z"
 published: true
-title: 'Learning Asymptote'
+title: Learning Asymptote
 ---
 
 <i>Learning without thought is labor lost; thought without learning is perilous.</i>

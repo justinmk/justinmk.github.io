@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2010-10-22
+date: "2010-10-22T00:00:00Z"
 published: true
-title: 'The Holographic Principle'
+title: The Holographic Principle
 ---
 
 I am <a href="http://www.reddit.com/r/science/comments/dtvpt/hogans_holometer_physicists_devise_a_way_to_test/">reading about</a> and <a href="http://www.reddit.com/r/science/comments/dtvpt/hogans_holometer_physicists_devise_a_way_to_test/c130ktu">attempting</a> to <a href="http://www.reddit.com/r/science/comments/dtvpt/hogans_holometer_physicists_devise_a_way_to_test/c130n9t">discuss</a> the <a href="http://en.wikipedia.org/wiki/Holographic_principle">holographic principle</a>, a conjecture in theoretical physics that the three-dimensional universe is a projection of a two-dimensional (i.e., surface area) encoding<sup>1</sup>. This would imply that all the particles and properties and <b>everything</b> of our universe may be <a href="http://en.wikipedia.org/wiki/Kolmogorov_complexity">compressed</a> <i>substantially </i>without losing information: reality is a (logical, not literal) projection of a very large bitmap.

@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2012-11-04
+date: "2012-11-04T00:00:00Z"
 published: true
-title: 'Impossible Ideas'
+title: Impossible Ideas
 ---
 
 Corollary to Paul Graham's <a href="http://paulgraham.com/ambitious.html">frighteningly ambitious startup ideas</a>: a list of <i>impossible ideas</i> that interest me personally.

@@ -1,10 +1,9 @@
 ---
-title: "Vim's social life"
-layout: post
-date: 2018-12-01
+author: Justin M. Keyes
+date: "2018-01-01T00:00:00Z"
 description: "A story of flags and POSIX compatibility"
 published: true
-author: Justin M. Keyes
+title: "Vim's social life"
 ---
 
 Vim is a shell command, and its fast startup supports that use-case: shell

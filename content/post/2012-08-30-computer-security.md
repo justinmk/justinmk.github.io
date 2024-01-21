@@ -1,9 +1,8 @@
 ---
-layout: post
-date: 2012-08-30
-last_modified_at: 2023-11-21
+date: "2012-08-30T00:00:00Z"
+last_modified_at: "2023-11-21"
 published: true
-title: 'Computer security'
+title: Computer security
 ---
 
 - hardening your system:

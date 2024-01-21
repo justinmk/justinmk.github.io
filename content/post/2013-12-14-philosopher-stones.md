@@ -1,6 +1,5 @@
 ---
-layout: post
-date: 2013-12-14
+date: "2013-12-14T00:00:00Z"
 published: true
 title: "The Philosopher's Pile of Stones"
 ---

@@ -1,8 +1,7 @@
 ---
-layout: post
-date: 2010-05-03
+date: "2010-05-03T00:00:00Z"
 published: true
-title: 'Sunset Rubdown'
+title: Sunset Rubdown
 ---
 
 Big Time invented a new adult beverage à la plage. Its working title was "Frankenberry"; the release title is "Sunset Rubdown".
