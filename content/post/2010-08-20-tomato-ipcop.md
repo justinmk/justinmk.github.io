@@ -9,7 +9,7 @@ title: 'Tomato in, IPCop out'
 <tr><td class="tr-caption" style="text-align: center;">It even shows inodes usage.</td></tr>
 </tbody></table>
 
-I've bid <i>vale</i> to my beige-box <a href="http://www.ipcop.org/">IPCop</a> firewall. I had built it in 2004 out of a circa-1996 Pentium machine and a couple NICs. For 6 years I've wondered when this little choo-choo would die... it never did.
+I've bid _vale_ to my beige-box <a href="http://www.ipcop.org/">IPCop</a> firewall. I had built it in 2004 out of a circa-1996 Pentium machine and a couple NICs. For 6 years I've wondered when this little choo-choo would die... it never did.
 
 Some neat things about IPCop compared to its contemporaries: usage graphs, port forwarding, intrusion detection, dynamic DNS; plus other things I never used, such as traffic shaping.
 

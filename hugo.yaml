@@ -1,0 +1,27 @@
+baseURL: http://sink.io
+# baseURL: "http://justinmk.github.io"
+
+# description: >
+#   Old copes retirement home
+
+disablePathToLower: true
+languageCode: en-us
+title: sink
+theme: PaperMod
+
+permalinks:
+  page:
+    post: /jmk/:slugorfilename/
+    # tutorials: /training/:slug/
+  section:
+    post: /jmk/
+    # tutorials: /training/
+
+menus:
+  main:
+  - name: Main
+    pageRef: /
+    weight: 10
+  - name: About
+    pageRef: /about
+    weight: 20
