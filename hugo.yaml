@@ -1,5 +1,5 @@
-baseURL: http://sink.io
-# baseURL: "http://justinmk.github.io"
+baseURL: https://sink.io
+# baseURL: "https://justinmk.github.io"
 copyright: '&copy; Justin M. Keyes'
 
 # description: >
