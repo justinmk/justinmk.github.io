@@ -100,6 +100,11 @@
     margin-bottom: var(--content-gap);
 }
 
+/* No content-gap for nested lists. */
+.post-content li > ul {
+    margin-bottom: 0;
+}
+
 .post-content ol,
 .post-content ul {
     padding-inline-start: 20px;
