@@ -295,6 +295,13 @@
     margin-top: 56px;
 }
 
+.post-footer-license {
+  margin-top: 3em;
+  text-align: left;
+  color: var(--secondary);
+  font-size: smaller;
+}
+
 .post-footer>* {
     margin-bottom: 10px;
 }
