@@ -71,9 +71,15 @@
 
 .post-content a,
 .toc a:hover {
+    color: var(--hyperlink);
     box-shadow: 0 1px 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+}
+
+.post-content a:hover {
+    text-decoration: none;
+    color: var(--hyperlink-hover);
 }
 
 .post-content a code {
@@ -192,7 +198,7 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.78em;
+    font-size: 0.84em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
