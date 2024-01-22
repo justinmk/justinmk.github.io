@@ -9,6 +9,14 @@
     # produces ./public/
     hugo --gc --minify
 
+## Write
+
+To embed raw html:
+
+    {{< rawhtml >}}
+    <lol>
+    {{< /rawhtml >}}
+
 ## Update deps
 
     brew install hugo

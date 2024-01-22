@@ -2,6 +2,7 @@
 date: "2013-06-08T00:00:00Z"
 published: true
 title: Low-level programming discourages automatic optimization
+slug: low-level-programming-auto-optimization
 ---
 
 [Frances Allen](https://news.ycombinator.com/item?id=5809336):

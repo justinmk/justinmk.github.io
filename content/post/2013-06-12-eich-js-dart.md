@@ -2,6 +2,7 @@
 date: "2013-06-12T00:00:00Z"
 published: true
 title: Brendan Eich comments on Dart, JavaScript
+slug: eich-js-dart
 ---
 
 _I stashed this away long ago and can't find the source (HN? reddit? a blog?).

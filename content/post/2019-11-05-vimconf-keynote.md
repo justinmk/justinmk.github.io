@@ -4,6 +4,7 @@ date: "2019-11-05T00:00:00Z"
 description: Keynote presentation on Neovim and the state of text editing technology
 published: true
 title: VimConf 2019
+slug: vimconf-keynote
 ---
 
 I [presented a keynote](https://youtu.be/Bt-vmPC_-Ho?t=23) at
@@ -27,6 +28,3 @@ I ran out of time :)
 ![vimconf-keynote](/img/vimconf-justinmk-1.jpg)
 
 ![vimconf-keynote](/img/vimconf-justinmk-2.jpg)
-
-Some people were very enthusiastic about the talk.  A few people mentioned that
-I need to work on my delivery.

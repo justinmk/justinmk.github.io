@@ -2,6 +2,7 @@
 date: "2010-08-20T00:00:00Z"
 published: true
 title: 'Tomato in, IPCop out'
+slug: tomato-ipcop
 ---
 
 {{< rawhtml >}}
@@ -47,8 +48,8 @@ Obviously this can be improved. The Buffalo WAP firmware can be replaced with <a
 
 The readme.htm gets you 97% there, but the following notes may save you time:
 
-- The "reset" button is the INIT button on the bottom of the router unit--recessed, so that a pen/paperclip is needed to push it. It is <i>not</i> the button on the top of the unit (the AOSS button).
-- After you reset the router unit, if you can't ping 192.168.11.1, make sure you plugged the ethernet cable into one of the numbered ports, <i>not</i> the WAN port. (Oops.)
+- The "reset" button is the INIT button on the bottom of the router unit--recessed, so that a pen/paperclip is needed to push it. It is _not_ the button on the top of the unit (the AOSS button).
+- After you reset the router unit, if you can't ping 192.168.11.1, make sure you plugged the ethernet cable into one of the numbered ports, _not_ the WAN port. (Oops.)
 - On my install of Windows 7 Ultimate (x64), the **tftp** command was not available from the command line, so `whr_install.bat` failed. I found tftp in:
   ```
   C:\Windows\winsxs\amd64_microsoft-windows-t..-deployment-package_31bf3856ad364e35_6.1.7600.16385_none_bac291589d407fde\tftp

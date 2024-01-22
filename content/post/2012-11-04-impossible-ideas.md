@@ -2,9 +2,10 @@
 date: "2012-11-04T00:00:00Z"
 published: true
 title: Impossible Ideas
+slug: impossible-ideas
 ---
 
-Corollary to Paul Graham's <a href="http://paulgraham.com/ambitious.html">frighteningly ambitious startup ideas</a>: a list of <i>impossible ideas</i> that interest me personally.
+Corollary to Paul Graham's [frighteningly ambitious startup ideas](http://paulgraham.com/ambitious.html): a list of _impossible ideas_ that interest me personally.
 
 - ubiquitous, secure, painless (one-click) bitcoin payment
 - ubiquitous, effortless, anonymous, encrypted communication

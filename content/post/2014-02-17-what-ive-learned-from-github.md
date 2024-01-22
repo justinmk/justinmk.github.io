@@ -2,6 +2,7 @@
 date: "2014-02-17T00:00:00Z"
 published: true
 title: "What I've Learned From GitHub"
+slug: what-ive-learned-from-github
 ---
 
 technically superior plugin isn't always the most popular. hard to gain traction with users.

@@ -2,8 +2,10 @@
 date: "2012-07-10T00:00:00Z"
 published: true
 title: You say priori, I say posteriori
+slug: apriori-aposteriori
 ---
 
+{{< rawhtml >}}
 <div class="tr_bq">
 <a href="http://37signals.com/svn/posts/3200-levels-of-aspiration">Levels of aspiration</a>:</div>
 <blockquote class="tr_bq">
@@ -14,3 +16,4 @@ Of the three startups I've worked with, two of the three were ridiculously over-
 <br />
 <br />
 The other was cobbled together with completely shit code, was constantly breaking on releases, and was glued together with perl scripts. They're now publicly traded.&nbsp;</blockquote>
+{{< /rawhtml >}}

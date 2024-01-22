@@ -2,6 +2,7 @@
 date: "2013-06-27T00:00:00Z"
 published: true
 title: Java parser
+slug: java-parser
 ---
 
 I wrote a toy parser (or rather a *parser specification* in the syntax of a <a href="http://www.cs.princeton.edu/~appel/modern/java/CUP/manual.html">parser-generator</a>) for [COOL](https://theory.stanford.edu/~aiken/software/cool/cool.html), and I'm wondering if mature, popular languages actually use these things to generate their parsers.
@@ -12,18 +13,13 @@ So it turns out that the parser for at least one popular, non-trivial grammar st
 
 _Update, 9 Sept 2013:_ Josh Haberman <a href="http://blog.reverberate.org/2013/09/ll-and-lr-in-context-why-parsing-tools.html">on LL and LR parsers</a>:
 
-<blockquote class="tr_bq">
-Despite this vast body of theoretical knowledge, few of the parsers that are in production systems today make use of any of this theory. Many opt instead for hand-written parsers that are not based on any formalism. [...] GCC moved away from their Bison-based parser to a handwritten recursive descent parser. The Ruby interpreter MRI may be one of the few remaining mainstream language implementations that does still use Bison (an LR-based tool) for parsing.&nbsp;</blockquote>
-<blockquote class="tr_bq">
-[...] pure LL and LR parsers have proven to be largely inadequate for real-world use cases. Many grammars that you'd naturally write for real-world use cases are not LL or LR, as we will see. The two most popular LL and LR-based parsing tools (ANTLR and Bison, respectively) both extend the pure LL and LR algorithms in various ways, adding features such as operator precedence, syntactic/semantic predicates, optional backtracking, and generalized parsing.</blockquote>
+> Despite this vast body of theoretical knowledge, few of the parsers that are in production systems today make use of any of this theory. Many opt instead for hand-written parsers that are not based on any formalism. [...] GCC moved away from their Bison-based parser to a handwritten recursive descent parser. The Ruby interpreter MRI may be one of the few remaining mainstream language implementations that does still use Bison (an LR-based tool) for parsing.&nbsp;</blockquote>
+>
+> [...] pure LL and LR parsers have proven to be largely inadequate for real-world use cases. Many grammars that you'd naturally write for real-world use cases are not LL or LR, as we will see. The two most popular LL and LR-based parsing tools (ANTLR and Bison, respectively) both extend the pure LL and LR algorithms in various ways, adding features such as operator precedence, syntactic/semantic predicates, optional backtracking, and generalized parsing.</blockquote>
 
 _Update, 2023:_ These days we have [tree-sitter](https://tree-sitter.github.io/tree-sitter/) and [Lezer](https://lezer.codemirror.net/). Things are getting [interesting](https://neovim.io/doc/user/treesitter.html).
 
 
-<hr />
+---
+
 1. Hankan Erdogmus, Oryal Tanir. <i>Advances in Software Engineering.</i>&nbsp;p. 426. Springer, 2002
-
-<div>
-
-</div>
-

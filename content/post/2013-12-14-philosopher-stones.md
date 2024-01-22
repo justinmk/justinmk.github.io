@@ -2,6 +2,7 @@
 date: "2013-12-14T00:00:00Z"
 published: true
 title: "The Philosopher's Pile of Stones"
+slug: philosopher-stones
 ---
 
 The generalization of this is "communication", but trying to focus on "improving communication" leaves important stones unturned. Like "end poverty", it is a mission that begins without a fully-formed thought. There is no supply of communication that can be buttressed; rather, to improve communication, instances of the abstract must be identified.

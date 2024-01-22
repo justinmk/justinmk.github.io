@@ -3,6 +3,7 @@ author: Justin M. Keyes
 date: "2016-03-17T00:00:00Z"
 published: true
 title: Economies of scale and self-interested cooperation
+slug: selfish-cooperation
 ---
 
 Quietly tucked away in the last slide of a [2011

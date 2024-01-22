@@ -2,8 +2,10 @@
 date: "2011-10-28T00:00:00Z"
 published: true
 title: 'Talk: Silicon Carbide and Body-Machine Interfaces'
+slug: talk-silicon-carbide
 ---
 
+{{< rawhtml >}}
 Notes from&nbsp;<a href="http://www.eng.usf.edu/~saddow/">Dr. Stephen E. Saddow</a>'s&nbsp;presentation, "Silicon Carbide Biomedical Technology for Bone Implants, Stents and Brain-Machine Interfaces".<br />
 <blockquote class="tr_bq">
 <span class="Apple-style-span" style="color: #666666;">Electrical Engineering Department<br />
@@ -16,6 +18,7 @@ University of South Florida</span></blockquote>
 Carbon electrodes: replace gold/metal electrodes which can become toxic.<br />
 <br />
 Semiconductors (Si):<br />
+{{< /rawhtml >}}
 
 - long-term (unlike polymers)
 - won't corrode (unlike metals, eventually)
@@ -25,11 +28,12 @@ Silicon Carbide (SiC):<br />
 
 - biocompatible ("in vivo")
 - hemocompatible ("in vitro")
-- <b>very&nbsp;</b>wide bandgap (low carrier concentration)&nbsp;
+- **very** wide bandgap (low carrier concentration)&nbsp;
     - "If we can make a switch using SiC, there will be effectively <b>no</b>&nbsp;leakage current".
 - 3x as hard as Si
 - 3x as flexible as Si
 
+{{< rawhtml >}}
 SiC is "like bone". Bone tissue can grow on SiC, but dies on Si.<br />
 <br />
 3C-SiC: "cubic form" of SiC, works better than 4H-SiC (hexagonal).<br />
@@ -48,3 +52,4 @@ SiC shows microglia only found near the surface.<br />
 <b>Q:</b> What is preventing the use of SiC as a replacement in biomedical applications which currently use Si?<br />
 <b>A:</b> Mostly, cost of materials (and&nbsp;manufacturing?). The process is not perfected.<br />
 <br />
+{{< /rawhtml >}}

@@ -4,6 +4,7 @@ date: "2016-07-06T00:00:00Z"
 last_modified_at: "2019-10-29"
 published: true
 title: Artifact System
+slug: artifact-system
 ---
 
 Software projects produce _artifacts_—a concept less particular than _package_
