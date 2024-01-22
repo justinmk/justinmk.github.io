@@ -1,7 +1,7 @@
 ---
 author: Justin M. Keyes
 date: "2016-07-06T00:00:00Z"
-last_modified_at: "2019-10-29"
+lastmod: "2019-10-29"
 published: true
 title: Artifact System
 slug: artifact-system
