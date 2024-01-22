@@ -13,6 +13,7 @@ paginate: 100
 
 params:
   dateformat: "2 Jan 2006"
+  author: Justin M. Keyes
   social:
     twitter: justinmk
 

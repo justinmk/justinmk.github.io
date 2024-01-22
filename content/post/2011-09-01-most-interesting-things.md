@@ -1,6 +1,6 @@
 ---
 date: "2011-09-01T00:00:00Z"
-last_modified_at: "2023-11-21"
+lastmod: "2023-11-21T00:00:00Z"
 published: true
 title: The Most Interesting Things
 ---
