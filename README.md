@@ -1,34 +1,18 @@
-https://github.com/github/pages-gem
 
 ## Run
 
-    gem update
-    gem install bundler
-    bundle config set --local path .bundle
-    bundle install
-    bundle exec jekyll serve --watch --livereload
+    brew install hugo
+    hugo server --buildDrafts
 
-### Fix broken gem/bundle/idk
+## Build
 
-If you see an error like this:
-
-    /usr/local/opt/ruby/bin/bundle:25:in `load': cannot load such file -- /usr/local/lib/ruby/gems/3.2.0/gems/bundler-2.4.6/exe/bundle (LoadError)
-    from /usr/local/opt/ruby/bin/bundle:25:in `<main>'
-
-The broken path is probably coming from the lockfile, so remove it.
-
-    rm Gemfile.lock
-    bundle install
+    # produces ./public/
+    hugo --gc --minify
 
 ## Update deps
 
-    gem update
-    gem install bundler
-    bundle config set --local path .bundle
-    rm Gemfile.lock
-    bundle update webrick
-    bundle update github-pages
+    brew install hugo
 
-## Fucking broken
+# Theme
 
-Doesn't work with ruby 3.3: https://github.com/github/pages-gem/issues/899
+https://github.com/adityatelange/hugo-PaperMod/wiki/Installation

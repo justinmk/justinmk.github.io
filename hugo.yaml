@@ -1,5 +1,6 @@
 baseURL: http://sink.io
 # baseURL: "http://justinmk.github.io"
+copyright: '&copy; Justin M. Keyes'
 
 # description: >
 #   Old copes retirement home
@@ -8,6 +9,12 @@ disablePathToLower: true
 languageCode: en-us
 title: sink
 theme: PaperMod
+paginate: 100
+
+params:
+  dateformat: "2 Jan 2006"
+  social:
+    twitter: justinmk
 
 permalinks:
   page:
@@ -19,9 +26,9 @@ permalinks:
 
 menus:
   main:
-  - name: Main
-    pageRef: /
-    weight: 10
   - name: About
     pageRef: /about
     weight: 20
+  # - name: Main
+  #   pageRef: /
+  #   weight: 10
