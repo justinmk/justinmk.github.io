@@ -29,7 +29,10 @@ menus:
   main:
   - name: About
     pageRef: /about
+    weight: 10
+  - name: '@justinmk'
+    url: 'https://x.com/justinmk'
     weight: 20
-  # - name: Main
-  #   pageRef: /
-  #   weight: 10
+  - name: 'github'
+    url: 'https://github.com/justinmk'
+    weight: 30
