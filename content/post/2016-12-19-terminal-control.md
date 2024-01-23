@@ -184,13 +184,13 @@ we can translate it to something we can write in a string:
 - `Pt` can be a literal "?" depending on the kind of code.
 - `BEL` is an single-code ASCII code, thus `0x7` (or octal `\07`).
 
-Now let's send some control sequences to the TTY.
+Now let's send some control-sequences to the TTY.
 
 Two-minute tutorial
 -------------------
 
-In the following exercises you will _control_ your terminal, _request info_ from
-it, using tools you _already have_ on your system. You can (mostly)
+In the following exercises you will _control_ your terminal and _request info_
+from it, using tools you _already have_ on your system. You can (mostly)
 copy-and-paste the commands and see results immediately.
 
 ### Move the cursor and write some (colored) text
