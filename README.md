@@ -11,11 +11,17 @@
 
 ## Write
 
-To embed raw html:
+Embed raw html:
 
     {{< rawhtml >}}
     <lol>
     {{< /rawhtml >}}
+
+## Admin
+
+List drafts:
+
+    hugo list drafts | grep -o '^[^,]\+'
 
 ## Update deps
 
