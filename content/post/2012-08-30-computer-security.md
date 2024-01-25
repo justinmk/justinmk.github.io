@@ -1,7 +1,6 @@
 ---
 date: "2012-08-30T00:00:00Z"
 lastmod: "2023-11-21"
-published: true
 title: Computer security
 slug: computer-security
 ---

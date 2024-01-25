@@ -1,7 +1,6 @@
 ---
 date: "2011-09-01T00:00:00Z"
 lastmod: "2023-11-21T00:00:00Z"
-published: true
 title: The Most Interesting Things
 slug: most-interesting-things
 ---

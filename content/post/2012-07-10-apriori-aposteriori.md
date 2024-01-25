@@ -1,6 +1,5 @@
 ---
 date: "2012-07-10T00:00:00Z"
-published: true
 title: You say priori, I say posteriori
 slug: apriori-aposteriori
 ---

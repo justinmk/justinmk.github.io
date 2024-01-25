@@ -1,6 +1,5 @@
 ---
 date: "2010-10-22T00:00:00Z"
-published: true
 title: The Holographic Principle
 slug: holographic-principle
 ---

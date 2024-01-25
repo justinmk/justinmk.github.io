@@ -2,7 +2,6 @@
 author: Justin M. Keyes
 date: "2018-01-01T00:00:00Z"
 description: "A story of flags and POSIX compatibility"
-published: true
 title: "Vim's social life"
 slug: vim-social-life
 ---

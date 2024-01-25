@@ -1,6 +1,5 @@
 ---
 date: "2010-08-13T00:00:00Z"
-published: true
 title: How to call a Cygwin bash command from Windows CMD
 slug: cygwin-bash-from-windows-cmdexe
 ---

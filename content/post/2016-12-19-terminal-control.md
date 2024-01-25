@@ -281,9 +281,9 @@ Conclusion
 ----------
 
 In this post we learned that "terminal programming" involves sending special
-codes to the same(!) component as user input/output. Any tool such as `echo` or
-`printf` (or the file-writing capabilities of any programming language) can
-control, request, and configure the terminal.
+codes to the same(!) pipe as regular output. Any tool such as `echo` or `printf`
+(or the file-writing capabilities of any programming language) can control,
+request, and configure the terminal.
 
 The details about the code sequences are documented in the xterm ctlseqs
 reference. Non-xterm terminals are mostly xterm-compatible, but also have their

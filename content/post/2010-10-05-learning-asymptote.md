@@ -1,6 +1,5 @@
 ---
 date: "2010-10-05T00:00:00Z"
-published: true
 title: Learning Asymptote
 slug: learning-asymptote
 ---

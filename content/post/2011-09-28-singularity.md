@@ -1,6 +1,5 @@
 ---
 date: "2011-09-28T00:00:00Z"
-published: true
 title: Singularity
 slug: singularity
 ---

@@ -1,6 +1,5 @@
 ---
 date: "2012-11-04T00:00:00Z"
-published: true
 title: Impossible Ideas
 slug: impossible-ideas
 ---

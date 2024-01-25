@@ -1,6 +1,5 @@
 ---
 date: "2011-10-28T00:00:00Z"
-published: true
 title: 'Talk: Silicon Carbide and Body-Machine Interfaces'
 slug: talk-silicon-carbide
 ---

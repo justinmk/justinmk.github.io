@@ -1,6 +1,5 @@
 ---
 date: "2010-08-20T00:00:00Z"
-published: true
 title: 'Tomato in, IPCop out'
 slug: tomato-ipcop
 ---

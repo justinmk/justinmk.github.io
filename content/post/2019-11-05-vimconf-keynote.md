@@ -2,7 +2,6 @@
 author: Justin M. Keyes
 date: "2019-11-05T00:00:00Z"
 description: Keynote presentation on Neovim and the state of text editing technology
-published: true
 title: VimConf 2019
 slug: vimconf-keynote
 ---

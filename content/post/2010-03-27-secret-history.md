@@ -1,6 +1,5 @@
 ---
 date: "2010-03-27T00:00:00Z"
-published: true
 title: The Secret History
 slug: secret-history
 ---
