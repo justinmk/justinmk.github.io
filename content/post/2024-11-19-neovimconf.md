@@ -4,7 +4,6 @@ date: "2024-11-19"
 title: Neovimconf 2024
 description: Keynote presentation for https://neovimconf.live/ 2024
 slug: neovimconf-2024
-draft: true
 ---
 
 
