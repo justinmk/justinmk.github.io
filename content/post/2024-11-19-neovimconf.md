@@ -9,6 +9,8 @@ slug: neovimconf-2024
 
 # State of Neovim 2024: The Giants Have No Timeouts
 
+![](/img/neovimconf-2024/neovimconf-twitch-frontpage.png)
+
 # What will you get out of this talk?
 
 - backstory
