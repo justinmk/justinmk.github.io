@@ -23,12 +23,12 @@ Semiconductors (Si):<br />
 - won't corrode (unlike metals, eventually)
 - ...but is it biocompatible/hemocompatible?
 
-Silicon Carbide (SiC):<br />
+Silicon Carbide (SiC):
 
 - biocompatible ("in vivo")
 - hemocompatible ("in vitro")
 - **very** wide bandgap (low carrier concentration)&nbsp;
-    - "If we can make a switch using SiC, there will be effectively <b>no</b>&nbsp;leakage current".
+    - "If we can make a switch using SiC, there will be effectively **no** leakage current".
 - 3x as hard as Si
 - 3x as flexible as Si
 
