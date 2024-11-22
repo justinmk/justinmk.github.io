@@ -12,9 +12,9 @@ Practices" guide nor canonical "quick start" tutorial. Even Bash (the shell) has
 [wooledge](https://mywiki.wooledge.org/BashGuide) and `set -x`. But terminal
 programming is a tenuous détente of undocumented conventions.
 
-This is my attempt to present a low-friction, self-contained tutorial for
-tinkering with your TTY and quickly seeing results. You can skip to the
-[Two-minute tutorial](#two-minute-tutorial) to start trying things immediately.
+This post is a low-friction, self-contained tutorial for tinkering with your TTY
+and quickly seeing results. You can skip to the [Two-minute tutorial](#two-minute-tutorial)
+to start trying things immediately.
 
 Tooling
 -------
@@ -193,7 +193,7 @@ In the following exercises you will _control_ your terminal and _request info_
 from it, using tools you _already have_ on your system. You can (mostly)
 copy-and-paste the commands and see results immediately.
 
-### Move the cursor and write some (colored) text
+### Exercise 1: Move the cursor and write some (colored) text
 
 Remember the notes about pseudoterminals (pty). Linux implements "Unix98" ("System V style") ptys,
 this means opening `/dev/ptmx` returns a new pty master file descriptor
@@ -236,7 +236,7 @@ $
       foo we did it
 ```
 
-### Send a status request
+### Exercise 2: Send a status request
 
 Some terminals (xterm, Vim/Nvim `:terminal`) support _requests_ (DECRQSS). Open
 the terminal and input this command:
@@ -272,7 +272,7 @@ what happened (DCS = `ESC P`):
 - Our request sent ST = `m`, so the response also gives ST = `m`.
 - The response gives `DCS 1` (not `DSC 0`), so our request was valid.
 
-### Set a terminal _mode_
+### Exercise 3: Set a terminal _mode_
 
 Exercise for the reader: try to set S8C1T mode in your terminal, by using the
 reference.

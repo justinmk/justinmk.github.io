@@ -1,4 +1,5 @@
 ---
+vim: textwidth=53 shiftwidth=2 nolist
 author: Justin M. Keyes
 date: "2024-11-19"
 title: Neovimconf 2024
@@ -951,6 +952,8 @@ Things that don't exist:
 
 ![](/img/neovimconf-2024/neovim-marketing.png)
 
+---
+
 <!--
 
 "futuristic, yet harmonious with legacy" (aka: sexy with leverage)
@@ -958,14 +961,12 @@ Things that don't exist:
 > Inverse vandalism: making things because we can.
 > - Alan Kay
 
----
 # Status: new batch of engineering leaders
 
 - zig mafia (narrow waist)
   - zig, nvim/zed/helix, cloudflare, tailscale
   - curl, ripgrep, imagemagick, ffmpeg
 
----
 # generalization is hard...
 - generalization is HARD bc it requires general knowledge/experience/cooking.
     - requires contemplation.
@@ -974,7 +975,6 @@ Things that don't exist:
 - examples:
     - kitty keyboard protocol (leonerd + kovid)
 
----
 # Thesis
 
 Thesis: each editor/IDE project is a competition to
@@ -989,7 +989,6 @@ Balance:
 - Massive corp can leverage a few well-chosen
   alignments (protocols).
 
----
 - who cares if an interface is generalized?
   - generalization allows focusing on narrow waist, fixing subtle bugs
     - e.g.: 'close' event not emitting
@@ -997,7 +996,6 @@ Balance:
     - lua closures are a generalization that deletes all the noise of a new language (side quest: Vim9script)
     - eliminates whole class of unknowns.
 
----
 # Effing the ineffable
 
 - Why text editor when mind-machine interface (BCI) is imminent?
@@ -1008,12 +1006,10 @@ Balance:
     get... the same thing lisp has offered for 40 years. And that part of Nvim
     becomes a presentation layer, the "raw text" mode will be a fallback (like xxd).
 
----
 - vscode is becoming a (very big) primitive, deployed
   as the standard "web ide" solution.
   - but not embedded in other editors.
 
----
 # Progress since 2019: Vim worse-is-better
 
 which parts of vim did we fix since 2019?
@@ -1028,7 +1024,6 @@ Vim's missing 50%:
 - ⚠️ Inconsistent UX: cmdline (:), execute(), :source
 
 
----
 jackets / containing structures
 
     graph TD
@@ -1056,8 +1051,5 @@ parallel tracks...
             multihead/p2p remote attach/detach
             hackable mentally-tractable starting point
             org/institutional knowledge
-
-
-vim: textwidth=53 shiftwidth=2 nolist
 
 -->
