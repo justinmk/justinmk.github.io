@@ -21,7 +21,6 @@ The main themes are:
 
 There were [too many slides](https://vimconf.org/2019/slides/justin.pdf).
 I spent years thinking about the topics, and weeks building the presentation.
-But I ran out of time.
 
 ![vimconf-keynote](/img/vimconf-justinmk-1.jpg)
 
