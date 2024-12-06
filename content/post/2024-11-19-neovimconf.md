@@ -3,7 +3,7 @@ vim: textwidth=53 shiftwidth=2 nolist
 author: Justin M. Keyes
 date: "2024-11-19"
 title: Neovimconf 2024
-description: Keynote presentation for https://neovimconf.live/ 2024
+description: Keynote presentation for Neovimconf.live 2024
 slug: neovimconf-2024
 ---
 
@@ -508,7 +508,7 @@ leverage
 
 - WIP: Options refactor+extend (@famiu, examples: #31111 #30993)
   - Enables us to fully leverage options instead of
-    module-specific innner platforms.
+    module-specific inner platforms.
     - Example: default floating window style: #20202
 - Builtin UI declares nvim_set_client_info() on its channel.
 - WIP: in-process LSP #24338
@@ -954,7 +954,9 @@ Things that don't exist:
 
 ---
 
-<!--
+{{< rawhtml >}}
+<script type="text/javascript">
+//<![CDATA[
 
 "futuristic, yet harmonious with legacy" (aka: sexy with leverage)
 
@@ -1052,4 +1054,6 @@ parallel tracks...
             hackable mentally-tractable starting point
             org/institutional knowledge
 
--->
+//]]>
+</script>
+{{< /rawhtml >}}
