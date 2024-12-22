@@ -9,7 +9,9 @@ disablePathToLower: true
 languageCode: en-us
 title: sink
 theme: PaperMod
-paginate: 100
+
+pagination:
+  pagerSize: 100
 
 params:
   dateformat: "2 Jan 2006"
