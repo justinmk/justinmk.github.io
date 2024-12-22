@@ -955,8 +955,7 @@ Things that don't exist:
 ---
 
 {{< rawhtml >}}
-<script type="text/javascript">
-//<![CDATA[
+<!--
 
 "futuristic, yet harmonious with legacy" (aka: sexy with leverage)
 
@@ -1029,11 +1028,11 @@ Vim's missing 50%:
 jackets / containing structures
 
     graph TD
-        MarketForces[Market Forces] --> NeoVimEcosystem[Neovim Project Knowledge/People/Docs/CI]
-        NeoVimEcosystem --> NvimArchitecture[Nvim Technical Architecture]
-        NvimArchitecture -->|Inherits from| VimLegacy[Vim Legacy]
-        NvimArchitecture -->|Uses| Libuv[libuv]
-        NvimArchitecture -->|Integrates| Libraries[Libraries]
+        MarketForces[Market Forces] --&gt; NeoVimEcosystem[Neovim Project Knowledge/People/Docs/CI]
+        NeoVimEcosystem --&gt; NvimArchitecture[Nvim Technical Architecture]
+        NvimArchitecture --&gt;|Inherits from| VimLegacy[Vim Legacy]
+        NvimArchitecture --&gt;|Uses| Libuv[libuv]
+        NvimArchitecture --&gt;|Integrates| Libraries[Libraries]
 
         style MarketForces fill:#f9f,stroke:#333,stroke-width:2px
         style NeoVimEcosystem fill:#bbf,stroke:#333,stroke-width:2px
@@ -1054,6 +1053,5 @@ parallel tracks...
             hackable mentally-tractable starting point
             org/institutional knowledge
 
-//]]>
-</script>
+-->
 {{< /rawhtml >}}
