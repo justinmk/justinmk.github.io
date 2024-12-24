@@ -7,10 +7,22 @@ description: Keynote presentation for Neovimconf.live 2024
 slug: neovimconf-2024
 ---
 
+Following are the video and slides for my Neovimconf 2024 presentation.
+The [playlist for all conference talks](https://youtube.com/playlist?list=PLhlaLyAlbLlq9xWf2xm_9p422GgqvATXk) is on youtube.
 
 # State of Neovim 2024: The Giants Have No Timeouts
 
 ![](/img/neovimconf-2024/neovimconf-twitch-frontpage.png)
+
+## Video
+
+{{< rawhtml >}}
+<iframe width="640" height="480"
+  src="https://www.youtube.com/embed/TUzdcB_PFJA"
+  title="State of Neovim 2024" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< /rawhtml >}}
 
 # What will you get out of this talk?
 
