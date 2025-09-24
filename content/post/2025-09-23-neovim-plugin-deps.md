@@ -134,7 +134,7 @@ instead of only 5%.
 `vim.deprecate()` is an example of back-pressure. It warns about deprecated
 usages. Users can ignore it by defining `vim.deprecate` to be a no-op.
 
-Likewise, you can warnings from your compiler. But do you? You can choose not to
+Likewise, you can ignore warnings from your compiler. But do you? You can choose not to
 enable type-checking. Yet Python users choose to introduce Mypy into their
 projects.
 
