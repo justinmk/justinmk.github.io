@@ -43,8 +43,8 @@ library is pushed through the dependency manager. This avoids "zero day"
 vulnerabilities.
 
 On the other hand, supply-chain attacks ([npm 2025](https://news.ycombinator.com/item?id=45169657), [Jia Tan](https://news.ycombinator.com/item?id=39914981))
-appear to be more common, easier to implement, and expontentially bigger in
-terms of blast-radius.
+appear to be more common, easier to implement, and exponentially bigger in terms
+of blast-radius.
 
 So we have what Alan Greenspan might call *a conundrum*.
 
@@ -57,7 +57,7 @@ concepts and toil become commonplace, mature, routine, and finally, tedious, we
 During the period of library/technique "incubation" in the ecosystem, yes, there
 is duplication and toil, but it gets subtracted when it matures. And that toil
 reminds plugin authors to pause before they decide to vendor in an
-over-architectured implementation of `string_join()`.
+over-architected implementation of `string_join()`.
 
 If your plugin is more than just a plugin, rather a big application, or even
 an [inner platform](https://www.lazyvim.org/) itself, then it probably has many
@@ -146,7 +146,7 @@ it sends a signal that reaches enough receptors to decide "canon".
 We can introduce backpressure via `:checkhealth` and runtime perf checks.
 
 * Active performance checks
-  * Nvim can perform *active* periodic, governer-style checks at runtime to
+  * Nvim can perform *active* periodic, governor-style checks at runtime to
     decide if a plugin sucks. If a plugin spawns to many slow processes or Lua
     tasks, Nvim can [track stats](https://github.com/neovim/neovim/issues/26861)
     and eventually reveal it to the user.
@@ -160,6 +160,9 @@ We can introduce backpressure via `:checkhealth` and runtime perf checks.
     plugins](https://github.com/neovim/neovim/pull/35854) in `:checkhealth`.
     Part of that hygiene story will be "the plugin's transitive deps should not
     be a [black hole](https://www.reddit.com/r/ProgrammerHumor/comments/6s0wov/heaviest_objects_in_the_universe/)".
+* Capabilities-based security
+  * [Integrating with webassembly](https://github.com/neovim/neovim/issues/23579)
+    gives us a path towards limiting plugin permissions.
 
 If you have other ideas [let us know](https://github.com/neovim/neovim/discussions).
 
