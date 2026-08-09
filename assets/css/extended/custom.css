@@ -1,0 +1,46 @@
+/* Overrides of PaperMod's theme CSS. Loaded after the theme stylesheet. */
+
+/* Hyperlink colors. `--hyperlink-hover` is declared per-mode because a custom
+   property resolves `var()` against the element it is declared on, so a single
+   `:root` declaration would freeze the light-mode `--primary`. */
+:root {
+    --code-bg: #eef;
+    --hyperlink: #2a7ae2;
+    --hyperlink-hover: var(--primary);
+}
+
+.dark {
+    --hyperlink: #89d6f6;
+    --hyperlink-hover: var(--primary);
+}
+
+.post-meta,
+.breadcrumbs {
+    font-size: smaller;
+}
+
+.post-content a,
+.toc a:hover {
+    color: var(--hyperlink);
+}
+
+.post-content a:hover {
+    text-decoration: none;
+    color: var(--hyperlink-hover);
+}
+
+/* No content-gap for nested lists. */
+.post-content li > ul {
+    margin-bottom: 0;
+}
+
+.post-content code {
+    font-size: 0.84em;
+}
+
+.post-footer-license {
+    margin-top: 3em;
+    text-align: left;
+    color: var(--secondary);
+    font-size: smaller;
+}

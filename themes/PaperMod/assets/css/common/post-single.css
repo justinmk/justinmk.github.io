@@ -16,7 +16,7 @@
 .post-meta,
 .breadcrumbs {
     color: var(--secondary);
-    font-size: smaller;
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -71,15 +71,9 @@
 
 .post-content a,
 .toc a:hover {
-    color: var(--hyperlink);
     box-shadow: 0 1px 0;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-}
-
-.post-content a:hover {
-    text-decoration: none;
-    color: var(--hyperlink-hover);
 }
 
 .post-content a code {
@@ -98,11 +92,6 @@
 .post-content figure,
 .post-content ul {
     margin-bottom: var(--content-gap);
-}
-
-/* No content-gap for nested lists. */
-.post-content li > ul {
-    margin-bottom: 0;
 }
 
 .post-content ol,
@@ -203,7 +192,7 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.84em;
+    font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
@@ -304,13 +293,6 @@
 
 .post-footer {
     margin-top: 56px;
-}
-
-.post-footer-license {
-  margin-top: 3em;
-  text-align: left;
-  color: var(--secondary);
-  font-size: smaller;
 }
 
 .post-footer>* {

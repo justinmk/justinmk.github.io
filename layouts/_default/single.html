@@ -40,6 +40,8 @@
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
+
+  {{ partial "post_license.html" . }}
   {{- end }}
 
   <footer class="post-footer">
