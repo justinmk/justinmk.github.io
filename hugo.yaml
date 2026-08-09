@@ -38,3 +38,6 @@ menus:
   - name: 'github'
     url: 'https://github.com/justinmk'
     weight: 30
+  - name: 'youtube'
+    url: 'https://www.youtube.com/@justinkz'
+    weight: 30
