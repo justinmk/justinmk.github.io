@@ -18,6 +18,9 @@ params:
   author: Justin M. Keyes
   # Don't show the ☀️ icon. Follow the browser's `prefers-color-scheme`.
   disableThemeToggle: true
+  label:
+    # Header wordmark only, so page titles and the RSS feed keep the bare title.
+    text: "sink ⏚ "
   social:
     twitter: justinmk
 
