@@ -6,7 +6,7 @@ copyright: '&copy; Justin M. Keyes'
 #   Old copes retirement home
 
 disablePathToLower: true
-languageCode: en-us
+locale: en-us
 title: sink
 theme: PaperMod
 
@@ -21,7 +21,7 @@ params:
 
 permalinks:
   page:
-    post: /jmk/:slugorfilename/
+    post: /jmk/:slugorcontentbasename/
     # tutorials: /training/:slug/
   section:
     post: /jmk/
