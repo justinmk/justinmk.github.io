@@ -16,6 +16,8 @@ pagination:
 params:
   dateformat: "2 Jan 2006"
   author: Justin M. Keyes
+  # Don't show the ☀️ icon. Follow the browser's `prefers-color-scheme`.
+  disableThemeToggle: true
   social:
     twitter: justinmk
 
